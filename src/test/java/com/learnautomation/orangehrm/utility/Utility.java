@@ -25,8 +25,6 @@ public class Utility
 	}
 	
 	
-	
-	
 	public static boolean waitForTitle(WebDriver driver,String title)
 	{
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
