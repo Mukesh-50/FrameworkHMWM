@@ -4,6 +4,13 @@
   <artifactId>HybridFramework_HMWM</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  
+  <properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+  
+  
   <dependencies>
 	
 	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
@@ -62,9 +69,23 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>XMLFiles\${testSuite}</suiteXmlFile>
 					</suiteXmlFiles>
+					
+					<systemPropertyVariables>
+					
+						<browser>${Browser}</browser>
+						<url>${stagingURL}</url>
+					
+					</systemPropertyVariables>
+					
+					
 				</configuration>
+				
+				
+				
+				
+				
 			</plugin>
 
 		</plugins>

@@ -3,8 +3,8 @@ package com.learnautomation.orangehrm.base;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
-import com.learnautomation.orangehrm.dataprovider.ConfigReader;
 import com.learnautomation.orangehrm.utility.BrowserFactory;
 
 public class BaseClass 
@@ -17,8 +17,21 @@ public class BaseClass
 		return driver;
 	}
 	
-
+	@Parameters({"Browser","stagingURL"})
 	@BeforeClass
+	public void startBrowser(String Browser,String url)
+	{
+		System.out.println("**** Starting Browser ****");
+		
+		BrowserFactory browser=new BrowserFactory();
+		
+		driver=browser.openBrowser(Browser,url);
+		
+		System.out.println("**** Browser is up and running ****");
+	}
+	
+
+/*	@BeforeClass
 	public void startBrowser()
 	{
 		System.out.println("**** Starting Browser ****");
@@ -30,7 +43,7 @@ public class BaseClass
 		driver=browser.openBrowser(config.getProperty("Browser"),config.getProperty("stagingURL"));
 		
 		System.out.println("**** Browser is up and running ****");
-	}
+	}*/
 	
 	
 	@AfterClass
