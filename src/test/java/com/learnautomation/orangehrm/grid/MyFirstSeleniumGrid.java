@@ -24,7 +24,8 @@ public class MyFirstSeleniumGrid {
 
 		caps.setCapability("real_mobile", "true");
 		
-		String hubURL="https://mukeshotwani3:s4GTbs4fFzQxJxzpzp2f@hub-cloud.browserstack.com/wd/hub";
+		// please create new account and add username, password for execution
+		String hubURL="https://username:password@hub-cloud.browserstack.com/wd/hub";
 		
 		URL url=new URL(hubURL);
 		
