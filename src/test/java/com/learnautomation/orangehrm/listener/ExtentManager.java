@@ -1,5 +1,8 @@
 package com.learnautomation.orangehrm.listener;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
@@ -12,7 +15,7 @@ public class ExtentManager {
     {
     	if (extent == null)
     	{
-    		createInstance(System.getProperty("user.dir")+"/Reports/Report_"+System.currentTimeMillis()+".html");
+    		createInstance(System.getProperty("user.dir")+"/Reports/Report_"+getDateTime()+".html");
     	}
     		return extent;
     }
@@ -23,9 +26,9 @@ public class ExtentManager {
         
         htmlReporter.config().setTheme(Theme.STANDARD);
         
-        htmlReporter.config().setDocumentTitle(fileName);
+        htmlReporter.config().setDocumentTitle("Test Automation Summary");
         
-        htmlReporter.config().setReportName(fileName);
+        htmlReporter.config().setReportName("Automation Report");
         
         extent = new ExtentReports();
         
@@ -33,4 +36,15 @@ public class ExtentManager {
         
         return extent;
     }
+    
+    public static String getDateTime()
+    {
+    	Date currentDate=new Date();
+    	
+    	SimpleDateFormat myFormat=new SimpleDateFormat("MM_dd_yy_HH_mm_ss");
+    	
+    	return myFormat.format(currentDate);
+    }
+    
+    
 }
