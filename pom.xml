@@ -76,7 +76,7 @@
 				<version>3.0.0-M5</version>
 				<configuration>
 					<suiteXmlFiles>
-						<!-- <suiteXmlFile>XMLFiles\${testSuite}</suiteXmlFile> -->
+						 <suiteXmlFile>XMLFiles\${testSuite}</suiteXmlFile> 
 					</suiteXmlFiles>
 
 					<systemPropertyVariables>
@@ -87,7 +87,7 @@
 						<browserVersion>${BrowserVersion}</browserVersion>
 						<osName>${OsName}</osName>
 						<osVersion>${OsVersion}</osVersion>
-						<url>${stagingURL}</url> -->
+						<url>${stagingURL}</url>  -->
 
 					</systemPropertyVariables>
 

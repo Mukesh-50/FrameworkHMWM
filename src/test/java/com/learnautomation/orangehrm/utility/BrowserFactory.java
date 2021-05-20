@@ -42,18 +42,15 @@ public class BrowserFactory {
 	public WebDriver openBrowserOnGrid(String browserName, String browserVersion,String osName,String osVersion,String application)
 	{
 		
-	/*	osName.replace("", "");
-		osVersion.replace("", "");
-		*/
 		DesiredCapabilities caps=new DesiredCapabilities();
 		
-		caps.setCapability("os_version",osVersion);
+		caps.setCapability("os_version",osVersion.replace("_", " "));
 
 		caps.setCapability("browser", browserName);
 		
 	    caps.setCapability("browser_version", browserVersion);		
 		
-	    caps.setCapability("os", osName);
+	    caps.setCapability("os", osName.replace("_", " "));
 		
 	    String hubURL="https://"+new ConfigReader().getProperty("username")+":"+new ConfigReader().getProperty("accessKey")+"@hub-cloud.browserstack.com/wd/hub";
 		

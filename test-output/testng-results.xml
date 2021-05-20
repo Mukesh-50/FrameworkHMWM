@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25391" started-at="2021-04-09T10:28:36 IST" finished-at="2021-04-09T10:29:02 IST">
+  <suite name="Suite" duration-ms="139264" started-at="2021-05-20T10:53:05 IST" finished-at="2021-05-20T10:55:24 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25391" started-at="2021-04-09T10:28:36 IST" finished-at="2021-04-09T10:29:02 IST">
-      <class name="com.learnautomation.orangehrm.grid.MyFirstSeleniumGrid">
-        <test-method status="PASS" signature="testOnBrowserStack()[pri:0, instance:com.learnautomation.orangehrm.grid.MyFirstSeleniumGrid@6ec8211c]" name="testOnBrowserStack" duration-ms="25160" started-at="2021-04-09T10:28:37 IST" finished-at="2021-04-09T10:29:02 IST">
+    <test name="Test" duration-ms="139264" started-at="2021-05-20T10:53:05 IST" finished-at="2021-05-20T10:55:24 IST">
+      <class name="com.learnautomation.orangehrm.testcases.SeleniumOnDocker3">
+        <test-method status="PASS" signature="testOnChrome()[pri:0, instance:com.learnautomation.orangehrm.testcases.SeleniumOnDocker3@545997b1]" name="testOnChrome" duration-ms="75748" started-at="2021-05-20T10:53:05 IST" finished-at="2021-05-20T10:54:21 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testOnBrowserStack -->
-      </class> <!-- com.learnautomation.orangehrm.grid.MyFirstSeleniumGrid -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testOnChrome -->
+      </class> <!-- com.learnautomation.orangehrm.testcases.SeleniumOnDocker3 -->
+      <class name="com.learnautomation.orangehrm.testcases.SeleniumOnDocker">
+        <test-method status="PASS" signature="testOnChrome()[pri:0, instance:com.learnautomation.orangehrm.testcases.SeleniumOnDocker@306279ee]" name="testOnChrome" duration-ms="132834" started-at="2021-05-20T10:53:05 IST" finished-at="2021-05-20T10:55:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnChrome -->
+      </class> <!-- com.learnautomation.orangehrm.testcases.SeleniumOnDocker -->
+      <class name="com.learnautomation.orangehrm.testcases.SeleniumOnDocker2">
+        <test-method status="PASS" signature="testOnChrome()[pri:0, instance:com.learnautomation.orangehrm.testcases.SeleniumOnDocker2@78186a70]" name="testOnChrome" duration-ms="139136" started-at="2021-05-20T10:53:05 IST" finished-at="2021-05-20T10:55:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOnChrome -->
+      </class> <!-- com.learnautomation.orangehrm.testcases.SeleniumOnDocker2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

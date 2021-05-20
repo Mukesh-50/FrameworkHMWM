@@ -1,4 +1,4 @@
-package com.learnautomation.api;
+/*package com.learnautomation.api;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -8,7 +8,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 
-public class FirstAPITest {
+public class FirstAPIRestAssured {
 	
 	
 	@Test
@@ -47,3 +47,4 @@ public class FirstAPITest {
 	}
 
 }
+*/
