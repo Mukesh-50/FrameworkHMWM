@@ -3,16 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.learnautomation.orangehrm.testcases.LoginTest2">
+      <class name="com.learnautomation.api.DiffAPIMethods5">
         <methods>
-          <include name="startBrowser"/>
-          <include name="tearDownReport"/>
-          <include name="setupReport"/>
-          <include name="testlogin_001" invocation-numbers="1"/>
-          <include name="collectResult"/>
-          <include name="closeBrowser"/>
+          <include name="createToken"/>
         </methods>
-      </class> <!-- com.learnautomation.orangehrm.testcases.LoginTest2 -->
+      </class> <!-- com.learnautomation.api.DiffAPIMethods5 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
