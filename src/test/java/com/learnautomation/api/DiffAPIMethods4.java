@@ -2,10 +2,9 @@ package com.learnautomation.api;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
+
 
 import static io.restassured.RestAssured.*;
 
